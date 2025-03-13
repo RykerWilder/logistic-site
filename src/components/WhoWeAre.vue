@@ -6,10 +6,10 @@
             <div class="w-[60%] p-8">
                 <h5 class="text-cyan-600 text-xl mb-2.5">WHO WE ARE</h5>
                 <h2 class="text-5xl font-bold mb-8">Excellence in Transport</h2>
-                <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum velit tortor,
+                <p class="mb-4 text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum velit tortor,
                     interdum sed cursus eu, sagittis ut nunc. Sed vitae tellus et arcu aliquet faucibus fermentum non
                     lacus.</p>
-                <p class="mb-4">Praesent fringilla quis massa et placerat. Mauris eu dui eget urna pellentesque gravida
+                <p class="mb-4 text-justify">Praesent fringilla quis massa et placerat. Mauris eu dui eget urna pellentesque gravida
                     vitae quis nibh. Ut at augue tortor. Pellentesque quis suscipit magna.</p>
                 <p class="mb-4 p-4 border-4 border-transparent border-l-black">Lorem ipsum dolor sit amet, consectetur
                     adipiscing elit. Sed
