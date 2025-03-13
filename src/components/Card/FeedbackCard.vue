@@ -1,21 +1,27 @@
 <script>
 export default {
     props: {
-        feedback: Array
+        trusted_feedback: {
+            type: Array,
+            required: true
+        }
     }
-}
+};
 </script>
 
 <template>
-    <div v-for="testimonial in feedback" class="bg-slate-600 rounded-md p-5">
-        <h2 class="text-cyan-600 font-extrabold text-2xl mb-2.5 flex gap-2 justify-center items-center">
-            {{ testimonial.title }}
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                stroke="currentColor" class="size-6 text-cyan-600 text-end">
-                <path stroke-linecap="round" stroke-linejoin="round"
-                    d="M8.625 12a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0H8.25m4.125 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0H12m4.125 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0h-.375M21 12c0 4.556-4.03 8.25-9 8.25a9.764 9.764 0 0 1-2.555-.337A5.972 5.972 0 0 1 5.41 20.97a5.969 5.969 0 0 1-.474-.065 4.48 4.48 0 0 0 .978-2.025c.09-.457-.133-.901-.467-1.226C3.93 16.178 3 14.189 3 12c0-4.556 4.03-8.25 9-8.25s9 3.694 9 8.25Z" />
-            </svg>
-        </h2>
-        <p class="text-justify">{{ testimonial.feedback }}</p>
+    <div class="flex justify-center gap-6">
+        <!-- Cicla solo sui feedback del gruppo corrente -->
+        <div v-for="(feedback, index) in trusted_feedback" :key="index" class="bg-slate-600 rounded-md p-5 h-[350px] w-[30%]">
+            <h2 class="text-cyan-600 font-extrabold text-2xl mb-2.5 flex gap-2 justify-center items-center">
+                {{ feedback.title }}
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="size-6 text-cyan-600 text-end">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M8.625 12a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0H8.25m4.125 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0H12m4.125 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0h-.375M21 12c0 4.556-4.03 8.25-9 8.25a9.764 9.764 0 0 1-2.555-.337A5.972 5.972 0 0 1 5.41 20.97a5.969 5.969 0 0 1-.474-.065 4.48 4.48 0 0 0 .978-2.025c.09-.457-.133-.901-.467-1.226C3.93 16.178 3 14.189 3 12c0-4.556 4.03-8.25 9-8.25s9 3.694 9 8.25Z" />
+                </svg>
+            </h2>
+            <p class="text-justify">{{ feedback.feedback }}</p>
+        </div>
     </div>
 </template>
