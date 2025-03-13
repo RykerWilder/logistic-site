@@ -5,6 +5,7 @@ import RoadTransport from '../components/RoadTransport.vue';
 import WhatAreWeDoing from '../components/WhatAreWeDoing.vue';
 import CustomerTestimonials from '../components/CustomerTestimonials.vue';
 import TalkToAnExpert from '../components/TalkToAnExpert.vue';
+import SendAMessage from '../components/SendAMessage.vue';
 
 export default {
     components: {
@@ -13,7 +14,8 @@ export default {
         RoadTransport,
         WhatAreWeDoing,
         CustomerTestimonials,
-        TalkToAnExpert
+        TalkToAnExpert,
+        SendAMessage
     }
 }
 
@@ -29,6 +31,7 @@ export default {
         <WhatAreWeDoing />
         <CustomerTestimonials />
         <TalkToAnExpert />
+        <SendAMessage />
     </main>
 </template>
 

@@ -1,10 +1,13 @@
 <script>
 import NewsLetter from '../components/NewsLetter.vue';
 import TalkToAnExpert from '../components/TalkToAnExpert.vue';
+import SendAMessage from '../components/SendAMessage.vue';
+
 export default {
     components: {
         NewsLetter,
-        TalkToAnExpert
+        TalkToAnExpert,
+        SendAMessage
     }
 }
 
@@ -17,7 +20,8 @@ export default {
             <h1 class="text-center text-white text-6xl font-extrabold z-10">Contacts Us</h1>
         </section>
         <NewsLetter />
-        <TalkToAnExpert :bg="bg-black"/>
+        <TalkToAnExpert/>
+        <SendAMessage />
     </main>
 </template>
 

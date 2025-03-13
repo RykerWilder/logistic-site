@@ -31,7 +31,5 @@
                 hello@example.com
             </li>
         </ul>
-        <button
-            class="rounded-full transition border-1 border-cyan-600 text-white p-3 px-4 cursor-pointer  mr-1.5 hover:bg-cyan-600 ">VIEW MAP</button>
     </div>
 </template>
