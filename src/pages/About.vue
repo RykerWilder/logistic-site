@@ -1,11 +1,13 @@
 <script>
 import ASuccessStory from '../components/ASuccessStory.vue';
 import WhatAreWeDoing from '../components/WhatAreWeDoing.vue';
+import AboutTheNetwork from '../components/AboutTheNetwork.vue';
 
 export default {
     components: {
         ASuccessStory,
-        WhatAreWeDoing
+        WhatAreWeDoing,
+        AboutTheNetwork
     }
 }
 
@@ -19,6 +21,7 @@ export default {
     </section>
     <ASuccessStory />
     <WhatAreWeDoing />
+    <AboutTheNetwork />
 </main>
 
 </template>
