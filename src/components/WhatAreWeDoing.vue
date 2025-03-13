@@ -5,7 +5,7 @@ export default {
             stats: [
                 { target: 128, current: 0, label: 'Certifications' },
                 { target: 230, current: 0, label: 'Employees' },
-                { target: 517, current: 0, label: 'Customers' },
+                { target: 357, current: 0, label: 'Customers' },
                 { target: 94, current: 0, label: 'Countries' }
             ],
             hasStarted: false // Aggiungi un flag per controllare se il conteggio è già partito
@@ -29,12 +29,6 @@ export default {
     },
     mounted() {
         this.$nextTick(() => {
-            // Verifica che this.$refs.section esista
-            if (!this.$refs.section) {
-                console.error("Elemento non trovato: this.$refs.section");
-                return;
-            }
-
             // Crea un Intersection Observer
             const observer = new IntersectionObserver(
                 (entries) => {
@@ -47,7 +41,7 @@ export default {
                     });
                 },
                 {
-                    threshold: 0.5 // Avvia il conteggio quando il 50% della sezione è visibile
+                    threshold: 0.9 // Avvia il conteggio quando il 50% della sezione è visibile
                 }
             );
             // Osserva la sezione
