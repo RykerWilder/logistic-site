@@ -1,14 +1,18 @@
 <script>
-
+import NewsLetter from '../components/NewsLetter.vue';
+export default {
+    components: {
+        NewsLetter
+    }
+}
 
 </script>
 
 
 <template>
-
-<h1>Contacts</h1>
+    <main>
+        <NewsLetter />
+    </main>
 </template>
 
-<style lang="scss" scoped>
-
-</style>
+<style lang="scss" scoped></style>
