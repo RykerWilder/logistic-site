@@ -1,6 +1,7 @@
 import { reactive } from "vue";
 
 export const store = reactive({
+    searchBar: false,
     main_services: [
         {
             title: 'Technology',

@@ -1,6 +1,12 @@
 <script>
-
-
+import { store } from '../store.js';
+export default {
+    data() {
+        return {
+            store
+        }
+    }
+}
 </script>
 
 
@@ -46,7 +52,7 @@
                 <li class="hover:text-white"><router-link :to="{ name: 'home' }">Home</router-link></li>
                 <li class="hover:text-white"><router-link :to="{ name: 'about' }">About</router-link></li>
                 <li class="hover:text-white"><router-link :to="{ name: 'contact' }">Contact Us</router-link></li>
-                <li class="hover:text-white cursor-pointer">
+                <li class="hover:text-white cursor-pointer" @click="store.searchBar = true">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                         stroke="currentColor" class="size-6">
                         <path stroke-linecap="round" stroke-linejoin="round"
