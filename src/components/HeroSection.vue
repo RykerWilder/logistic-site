@@ -23,7 +23,7 @@
 
 <style scoped>
 section {
-    background-image: url(../assets/img/bg-9.jpg);
+    background-image: url(../assets/img/bg-hero.jpg);
     background-position: center;
     background-attachment: fixed;
 }

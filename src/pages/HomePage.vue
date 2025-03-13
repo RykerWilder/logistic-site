@@ -3,13 +3,15 @@ import HeroSection from '../components/HeroSection.vue';
 import WhoWeAre from '../components/WhoWeAre.vue';
 import RoadTransport from '../components/RoadTransport.vue';
 import WhatAreWeDoing from '../components/WhatAreWeDoing.vue';
+import CustomerTestimonials from '../components/CustomerTestimonials.vue';
 
 export default {
     components: {
         HeroSection,
         WhoWeAre,
         RoadTransport,
-        WhatAreWeDoing
+        WhatAreWeDoing,
+        CustomerTestimonials
     }
 }
 
@@ -23,6 +25,7 @@ export default {
         <WhoWeAre />
         <RoadTransport />
         <WhatAreWeDoing />
+        <CustomerTestimonials />
     </main>
 </template>
 

@@ -18,6 +18,28 @@ export const store = reactive({
             icon: 'M2.25 7.125C2.25 6.504 2.754 6 3.375 6h6c.621 0 1.125.504 1.125 1.125v3.75c0 .621-.504 1.125-1.125 1.125h-6a1.125 1.125 0 0 1-1.125-1.125v-3.75ZM14.25 8.625c0-.621.504-1.125 1.125-1.125h5.25c.621 0 1.125.504 1.125 1.125v8.25c0 .621-.504 1.125-1.125 1.125h-5.25a1.125 1.125 0 0 1-1.125-1.125v-8.25ZM3.75 16.125c0-.621.504-1.125 1.125-1.125h5.25c.621 0 1.125.504 1.125 1.125v2.25c0 .621-.504 1.125-1.125 1.125h-5.25a1.125 1.125 0 0 1-1.125-1.125v-2.25Z'
         }
     ],
+    trusted_feedback: [
+        {
+            title: 'WooCommerce',
+            feedback: 'Sono un cliente abituale dell Azienda GHI per i miei trasporti giornalieri da e per il lavoro. La loro efficienza nel gestire le corse quotidiane e la convenienza dei loro prezzi mi hanno convinto a continuare a utilizzare i loro servizi. È un sollievo sapere di poter contare su di loro per i miei spostamenti quotidiani.'
+        },
+        {
+            title: 'WordPress',
+            feedback: 'La mia azienda collabora regolarmente con l Azienda DEF per le nostre esigenze di trasporto di merci su larga scala. Abbiamo sempre apprezzato la loro affidabilità e trasparenza nel fornire preventivi chiari e nel rispettare i tempi di consegna. È raro trovare un partner logistico così affidabile e professionale.'
+        },
+        {
+            title: 'Pingdom',
+            feedback: 'Ho avuto l opportunità di usufruire dei servizi di trasporto dell Azienda ABC per una recente spedizione internazionale. Sono rimasto impressionato dalla loro attenzione al cliente e dalla disponibilità a risolvere eventuali problemi. La spedizione è stata gestita con cura e precisione, e sono rimasto soddisfatto dell intera esperienza.'
+        },
+        {
+            title: 'JQuery',
+            feedback: 'La mia azienda collabora regolarmente con l Azienda DEF per le nostre esigenze di trasporto di merci su larga scala. Abbiamo sempre apprezzato la loro affidabilità e trasparenza nel fornire preventivi chiari e nel rispettare i tempi di consegna. È raro trovare un partner logistico così affidabile e professionale.'
+        },
+        {
+            title: 'Less',
+            feedback: 'Ho utilizzato i servizi di trasporto dell Azienda XYZ per consegnare merci urgenti più volte, e non mi hanno mai deluso. Il personale è professionale e cortese, e le consegne sono sempre puntuali. Consiglio vivamente questa azienda a chiunque cerchi un servizio di trasporto efficiente.'
+        }
+    ],
     footer_cards: [
         {
             title: "Company",

@@ -24,7 +24,7 @@
 <style scoped>
 
 section {
-    background-image: url('../assets/img/bg-10.jpg');
+    background-image: url('../assets/img/bg-results.jpg');
     background-position: center;
     background-attachment: fixed;
 }
