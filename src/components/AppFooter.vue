@@ -1,8 +1,14 @@
 <script>
+import { store } from '../store.js';
 import FooterCard from './Card/FooterCard.vue';
 export default {
     components: {
         FooterCard
+    },
+    data() {
+        return {
+            store
+        }
     }
 }
 
@@ -12,12 +18,12 @@ export default {
 <template>
     <footer class="bg-black h-[400px] p-8 flex justify-between">
         <div class="h-full">
-            <div class="h-[50%]">
-                <img class="rounded-md max-h-full bg-slate-600" src="../assets/img/logo.svg" alt="logo">
-            </div>
             <p>Built to the smallest detail with a focus on feature availability.</p>
             <ul class="text-slate-600 w-full">
-                <li class="flex gap-1 mb-2">
+                <li>
+                    <button class="mb-8 rounded-full transition text-white p-3 px-4 cursor-pointer border-1 border-cyan-600 hover:bg-cyan-600">Buy Nexgen</button>
+                </li>
+                <li class="flex gap-1 mb-8 hover:text-cyan-600">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                         stroke="currentColor" class="size-6">
                         <path stroke-linecap="round" stroke-linejoin="round"
@@ -27,7 +33,7 @@ export default {
                     </svg>
                     Main Avenue, 987
                 </li>
-                <li class="flex gap-1 mb-2">
+                <li class="flex gap-1 mb-8 hover:text-cyan-600">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                         stroke="currentColor" class="size-6">
                         <path stroke-linecap="round" stroke-linejoin="round"
@@ -35,7 +41,7 @@ export default {
                     </svg>
                     +1 (305) 1234-5678
                 </li>
-                <li class="flex gap-1 mb-2">
+                <li class="flex gap-1 mb-8 hover:text-cyan-600">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                         stroke="currentColor" class="size-6">
                         <path stroke-linecap="round" stroke-linejoin="round"
@@ -43,15 +49,10 @@ export default {
                     </svg>
                     hello@example.com
                 </li>
-                <li>
-                    <button class="p-1 hover:bg-slate-600 hover:text-white rounded-md cursor-pointer">Buy Nexgen</button>
-                </li>
             </ul>
         </div>
-        <div class="flex justify-around w-full">
-            <FooterCard />
-            <FooterCard />
-            <FooterCard />
+        <div class="flex justify-around items-center gap-8 w-full">
+            <FooterCard :cards="store.footer_cards"/>
         </div>
     </footer>
 
