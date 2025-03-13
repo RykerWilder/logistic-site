@@ -7,7 +7,7 @@ export default {
 </script>
 
 <template>
-    <div class="bg-slate-600 p-3 rounded-xl hover:scale-125" v-for="service in services">
+    <div class="bg-slate-600 p-3 rounded-xl hover:scale-125 transition" v-for="service in services">
         <div class="flex justify-between items-center mb-2.5">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                 stroke="currentColor" class="size-10 text-cyan-600">

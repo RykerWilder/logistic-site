@@ -53,7 +53,7 @@
                             d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
                     </svg>
                 </li>
-                <li><button class="p-3 hover:bg-slate-600 hover:text-white rounded-full cursor-pointer">Buy
+                <li><button class="p-3 transition hover:bg-slate-600 hover:text-white rounded-full cursor-pointer">Buy
                         Nexgen</button>
                 </li>
             </ul>
