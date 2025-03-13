@@ -22,7 +22,7 @@ export default {
             <p class="text-center text-white">We work intensively in search of ideals that can add up in the lives of
                 our customers. is what moves us and we are grateful for the recognition.</p>
         </div>
-        <div class="p-8 flex justify-between items-center text-white overflow-x-scroll overflow-y-hidden w-full">
+        <div class="p-8 flex justify-between items-center gap-5 text-white overflow-x-scroll overflow-y-hidden w-full">
             <FeedbackCard :feedback="store.trusted_feedback"/>
         </div>
     </section>
