@@ -31,5 +31,6 @@ section:nth-child(1) {
     background-image: url('../assets/img/bg-about.jpg');
     background-position: center;
     background-attachment: fixed;
+    background-size: cover;
 }
 </style>

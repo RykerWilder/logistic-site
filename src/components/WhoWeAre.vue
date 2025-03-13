@@ -23,7 +23,7 @@
                 </ul>
             </div>
             <div class="p-8 w-[40%]">
-                <div class="bg-slate-600 w-full flex flex-col gap-5 p-6 rounded-xl">
+                <div class="bg-slate-400 w-full flex flex-col gap-5 p-6 rounded-xl">
                     <div class="flex justify-between">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                             stroke="currentColor" class="size-10 text-cyan-600">
