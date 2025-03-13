@@ -1,5 +1,60 @@
 <script>
+export default {
+    data() {
+        return {
+            stats: [
+                { target: 128, current: 0, label: 'Certifications' },
+                { target: 230, current: 0, label: 'Employees' },
+                { target: 517, current: 0, label: 'Customers' },
+                { target: 94, current: 0, label: 'Countries' }
+            ],
+            hasStarted: false // Aggiungi un flag per controllare se il conteggio è già partito
+        };
+    },
+    methods: {
+        startCount() {
+            if (this.hasStarted) return; // Se il conteggio è già partito, esci
+            this.hasStarted = true;
 
+            this.stats.forEach((stat) => {
+                const interval = setInterval(() => {
+                    if (stat.current < stat.target) {
+                        stat.current++;
+                    } else {
+                        clearInterval(interval);
+                    }
+                }, 10); // Regola la velocità del conteggio
+            });
+        }
+    },
+    mounted() {
+        this.$nextTick(() => {
+            // Verifica che this.$refs.section esista
+            if (!this.$refs.section) {
+                console.error("Elemento non trovato: this.$refs.section");
+                return;
+            }
+
+            // Crea un Intersection Observer
+            const observer = new IntersectionObserver(
+                (entries) => {
+                    entries.forEach((entry) => {
+                        if (entry.isIntersecting) {
+                            // Se la sezione è visibile, avvia il conteggio
+                            this.startCount();
+                            observer.unobserve(this.$refs.section); // Smetti di osservare dopo l'avvio
+                        }
+                    });
+                },
+                {
+                    threshold: 0.5 // Avvia il conteggio quando il 50% della sezione è visibile
+                }
+            );
+            // Osserva la sezione
+            observer.observe(this.$refs.section);
+        });
+    }
+};
 </script>
 
 <template>
@@ -9,16 +64,17 @@
             <h2 class="text-5xl font-bold mb-8 text-white">Results in Number</h2>
             <p class="text-white">Our goal is to exceed expectations by delivering the best job possible.</p>
         </div>
-        <div class="p-8">
-            <ul class="flex justify-between">
-                <li class="text-white font-black flex flex-col items-center"><span class="text-cyan-600 text-7xl">128</span>Certifications</li>
-                <li class="text-white font-black flex flex-col items-center"><span class="text-cyan-600 text-7xl">230</span>Employees</li>
-                <li class="text-white font-black flex flex-col items-center"><span class="text-cyan-600 text-7xl">517</span>Customers</li>
-                <li class="text-white font-black flex flex-col items-center"><span class="text-cyan-600 text-7xl">94</span>Countries</li>
-            </ul>
+        <div class="p-8 flex justify-around">
+            <!-- Sposta il ref qui -->
+            <div ref="section" class="flex justify-around w-full">
+                <div v-for="(item, index) in stats" :key="index"
+                    class="text-white font-black flex flex-col items-center">
+                    <span class="text-cyan-600 text-7xl">{{ item.current }}</span>
+                    <span class="stat-label">{{ item.label }}</span>
+                </div>
+            </div>
         </div>
     </section>
-
 </template>
 
 <style scoped>
