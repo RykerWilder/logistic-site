@@ -1,8 +1,10 @@
 <script>
 import NewsLetter from '../components/NewsLetter.vue';
+import TalkToAnExpert from '../components/TalkToAnExpert.vue';
 export default {
     components: {
-        NewsLetter
+        NewsLetter,
+        TalkToAnExpert
     }
 }
 
@@ -11,8 +13,18 @@ export default {
 
 <template>
     <main>
+        <section class="h-[50vh] flex justify-center items-center">
+            <h1 class="text-center text-white text-6xl font-extrabold z-10">Contacts Us</h1>
+        </section>
         <NewsLetter />
+        <TalkToAnExpert :bg="bg-black"/>
     </main>
 </template>
 
-<style lang="scss" scoped></style>
+<style scoped>
+section:nth-child(1) {
+    background-image: url('../assets/img/bg-contact.jpg');
+    background-position: center;
+    background-attachment: fixed;
+}
+</style>
