@@ -27,7 +27,17 @@ cd nexgen
 npm install
 ```
 
-4. After you install the dependencies, you can start the development server:
+4. You will need to install VUE routers
+```bash
+npm install vue-router@4
+```
+
+5. Install TailwindCSS
+```bash
+npm install tailwindcss @tailwindcss/vite
+```
+
+6. After you install the dependencies, you can start the development server:
 ```bash
 npm run dev
 ```
