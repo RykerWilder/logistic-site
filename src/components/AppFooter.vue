@@ -1,5 +1,5 @@
 <script>
-import FooterCard from './FooterCard.vue';
+import FooterCard from './Card/FooterCard.vue';
 export default {
     components: {
         FooterCard
