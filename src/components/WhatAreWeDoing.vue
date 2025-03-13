@@ -22,7 +22,6 @@
 </template>
 
 <style scoped>
-
 section {
     background-image: url('../assets/img/bg-results.jpg');
     background-position: center;
