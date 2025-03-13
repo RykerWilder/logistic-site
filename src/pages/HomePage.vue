@@ -2,12 +2,14 @@
 import HeroSection from '../components/HeroSection.vue';
 import WhoWeAre from '../components/WhoWeAre.vue';
 import RoadTransport from '../components/RoadTransport.vue';
+import WhatAreWeDoing from '../components/WhatAreWeDoing.vue';
 
 export default {
     components: {
         HeroSection,
         WhoWeAre,
-        RoadTransport
+        RoadTransport,
+        WhatAreWeDoing
     }
 }
 
@@ -20,6 +22,7 @@ export default {
         <HeroSection />
         <WhoWeAre />
         <RoadTransport />
+        <WhatAreWeDoing />
     </main>
 </template>
 
