@@ -19,26 +19,76 @@ export const store = reactive({
         }
     ],
     trusted_feedback: [
-        {
-            title: 'WooCommerce',
-            feedback: 'Sono un cliente abituale dell Azienda GHI per i miei trasporti giornalieri da e per il lavoro. La loro efficienza nel gestire le corse quotidiane e la convenienza dei loro prezzi mi hanno convinto a continuare a utilizzare i loro servizi. È un sollievo sapere di poter contare su di loro per i miei spostamenti quotidiani.'
-        },
-        {
-            title: 'WordPress',
-            feedback: 'La mia azienda collabora regolarmente con l Azienda DEF per le nostre esigenze di trasporto di merci su larga scala. Abbiamo sempre apprezzato la loro affidabilità e trasparenza nel fornire preventivi chiari e nel rispettare i tempi di consegna. È raro trovare un partner logistico così affidabile e professionale.'
-        },
-        {
-            title: 'Pingdom',
-            feedback: 'Ho avuto l opportunità di usufruire dei servizi di trasporto dell Azienda ABC per una recente spedizione internazionale. Sono rimasto impressionato dalla loro attenzione al cliente e dalla disponibilità a risolvere eventuali problemi. La spedizione è stata gestita con cura e precisione, e sono rimasto soddisfatto dell intera esperienza.'
-        },
-        {
-            title: 'JQuery',
-            feedback: 'La mia azienda collabora regolarmente con l Azienda DEF per le nostre esigenze di trasporto di merci su larga scala. Abbiamo sempre apprezzato la loro affidabilità e trasparenza nel fornire preventivi chiari e nel rispettare i tempi di consegna. È raro trovare un partner logistico così affidabile e professionale.'
-        },
-        {
-            title: 'Less',
-            feedback: 'Ho utilizzato i servizi di trasporto dell Azienda XYZ per consegnare merci urgenti più volte, e non mi hanno mai deluso. Il personale è professionale e cortese, e le consegne sono sempre puntuali. Consiglio vivamente questa azienda a chiunque cerchi un servizio di trasporto efficiente.'
-        }
+        [
+            {
+                title: 'WooCommerce',
+                feedback: 'Sono un cliente abituale dell Azienda GHI per i miei trasporti giornalieri da e per il lavoro. La loro efficienza nel gestire le corse quotidiane e la convenienza dei loro prezzi mi hanno convinto a continuare a utilizzare i loro servizi. È un sollievo sapere di poter contare su di loro per i miei spostamenti quotidiani.'
+            },
+            {
+                title: 'WordPress',
+                feedback: 'La mia azienda collabora regolarmente con l Azienda DEF per le nostre esigenze di trasporto di merci su larga scala. Abbiamo sempre apprezzato la loro affidabilità e trasparenza nel fornire preventivi chiari e nel rispettare i tempi di consegna. È raro trovare un partner logistico così affidabile e professionale.'
+            },
+            {
+                title: 'Pingdom',
+                feedback: 'Ho avuto l opportunità di usufruire dei servizi di trasporto dell Azienda ABC per una recente spedizione internazionale. Sono rimasto impressionato dalla loro attenzione al cliente e dalla disponibilità a risolvere eventuali problemi. La spedizione è stata gestita con cura e precisione, e sono rimasto soddisfatto dell intera esperienza.'
+            }
+        ],
+        [
+            {
+                title: 'JQuery',
+                feedback: 'La mia azienda collabora regolarmente con l Azienda DEF per le nostre esigenze di trasporto di merci su larga scala. Abbiamo sempre apprezzato la loro affidabilità e trasparenza nel fornire preventivi chiari e nel rispettare i tempi di consegna. È raro trovare un partner logistico così affidabile e professionale.'
+            },
+            {
+                title: 'Less',
+                feedback: 'Ho utilizzato i servizi di trasporto dell Azienda XYZ per consegnare merci urgenti più volte, e non mi hanno mai deluso. Il personale è professionale e cortese, e le consegne sono sempre puntuali. Consiglio vivamente questa azienda a chiunque cerchi un servizio di trasporto efficiente.'
+            },
+            {
+                title: 'Amazon',
+                feedback: 'Ho utilizzato i servizi di Azienda GHI per la spedizione dei miei prodotti e sono rimasto molto soddisfatto. La puntualità e l\'affidabilità sono state eccezionali. Consiglio vivamente i loro servizi a chiunque abbia bisogno di un trasporto efficiente.'
+            }
+        ],
+        [
+            {
+                title: 'Shopify',
+                feedback: 'Azienda GHI ha superato le mie aspettative con il loro servizio di logistica. Hanno gestito le mie spedizioni in modo impeccabile, garantendo che i pacchi arrivassero sempre in tempo. Un partner di fiducia per il mio business.'
+            },
+            {
+                title: 'Etsy',
+                feedback: 'Grazie ad Azienda GHI, ho potuto espandere il mio mercato oltre i confini locali. Il loro servizio di trasporto è stato fondamentale per la crescita del mio negozio online. Professionalità e cortesia sono il loro punto di forza.'
+            },
+            {
+                title: 'eBay',
+                feedback: 'Ho avuto un\'esperienza fantastica con Azienda GHI. Hanno gestito le mie spedizioni con grande cura e attenzione ai dettagli. I miei clienti sono sempre soddisfatti dei tempi di consegna. Consigliatissimo!'
+            },
+        ],
+        [
+            {
+                title: 'Walmart',
+                feedback: 'Azienda GHI è stata un partner eccezionale per la gestione della nostra catena di approvvigionamento. La loro capacità di adattarsi alle nostre esigenze e di fornire soluzioni su misura è stata impressionante.'
+            },
+            {
+                title: 'Target',
+                feedback: 'La collaborazione con Azienda GHI ha migliorato notevolmente la nostra efficienza logistica. I loro servizi sono sempre puntuali e affidabili, il che ci permette di concentrarci sulla crescita del nostro business.'
+            },
+            {
+                title: 'Best Buy',
+                feedback: 'Azienda GHI ha trasformato il modo in cui gestiamo le nostre consegne. La loro tecnologia avanzata e il servizio clienti eccezionale hanno fatto la differenza. Non potremmo essere più soddisfatti.'
+            },
+        ],
+        [
+            {
+                title: 'Zalando',
+                feedback: 'Con Azienda GHI, abbiamo trovato un partner affidabile per le nostre esigenze di trasporto internazionale. La loro competenza e professionalità sono state fondamentali per il successo delle nostre operazioni.'
+            },
+            {
+                title: 'ASOS',
+                feedback: 'Azienda GHI ha semplificato notevolmente il nostro processo di spedizione. La loro attenzione ai dettagli e la capacità di risolvere rapidamente eventuali problemi sono state impressionanti. Consigliatissimo!'
+            },
+            {
+                title: 'Alibaba',
+                feedback: 'La collaborazione con Azienda GHI ci ha permesso di ottimizzare i tempi di consegna e di ridurre i costi logistici. La loro flessibilità e professionalità sono state fondamentali per il nostro successo.'
+            }
+        ]
     ],
     footer_cards: [
         {

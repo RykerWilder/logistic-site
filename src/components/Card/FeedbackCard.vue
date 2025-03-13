@@ -7,7 +7,7 @@ export default {
 </script>
 
 <template>
-    <div v-for="testimonial in feedback" class="bg-slate-600 rounded-md p-5 w-[450px] h-[450px]">
+    <div v-for="testimonial in feedback" class="bg-slate-600 rounded-md p-5">
         <h2 class="text-cyan-600 font-extrabold text-2xl mb-2.5 flex gap-2 justify-center items-center">
             {{ testimonial.title }}
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"

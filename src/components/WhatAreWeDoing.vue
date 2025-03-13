@@ -41,7 +41,7 @@ export default {
                     });
                 },
                 {
-                    threshold: 0.9 // Avvia il conteggio quando il 50% della sezione è visibile
+                    threshold: 0.9 // Avvia il conteggio quando il 90% della sezione è visibile
                 }
             );
             // Osserva la sezione
