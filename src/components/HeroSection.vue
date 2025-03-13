@@ -5,7 +5,7 @@
 <template>
     <section class="h-[80vh]">
         <div class="flex flex-col justify-center items-start p-20 w-[50%]">
-            <h5 class="text-cyan-600 text-xl">LOGISTIC SERVICES</h5>
+            <h5 class="text-cyan-600 text-xl font-bold">LOGISTIC SERVICES</h5>
             <h1 class="font-extrabold text-white text-8xl">CARGO<br>TRANSPORT</h1>
             <p class="text-white text-2xl mb-5">Fractional or exclusive road cargo transportation to all regions,
                 with small, medium and large vehicles.</p>
