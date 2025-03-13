@@ -1,5 +1,17 @@
 <script>
+import { store } from '../store.js';
+import RoadTransportCard from './Card/RoadTransportCard.vue';
 
+export default {
+    components: {
+        RoadTransportCard
+    },
+    data() {
+        return {
+            store
+        }
+    }
+}
 </script>
 
 <template>
@@ -13,6 +25,8 @@
                 <button class="text-white border-1 border-cyan-600 rounded-full p-2 cursor-pointer hover:bg-cyan-600">SEE ALL</button>
             </div>
         </div>
-        <div></div>
+        <div class="flex p-8 gap-10">
+            <RoadTransportCard :services="store.main_services"/>
+        </div>
     </section>
 </template>
