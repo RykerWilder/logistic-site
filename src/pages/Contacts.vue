@@ -20,7 +20,7 @@ export default {
             <h1 class="text-center text-white text-6xl font-extrabold z-10">Contacts Us</h1>
         </section>
         <NewsLetter />
-        <TalkToAnExpert/>
+        <TalkToAnExpert />
         <SendAMessage />
     </main>
 </template>

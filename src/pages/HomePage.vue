@@ -34,7 +34,3 @@ export default {
         <SendAMessage />
     </main>
 </template>
-
-<style scoped>
-
-</style>
