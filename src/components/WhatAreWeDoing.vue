@@ -3,7 +3,7 @@
 </script>
 
 <template>
-    <section class="px-10 h-[70vh]">
+    <section class="px-10 h-[70vh] flex flex-col justify-evenly">
         <div class="p-8 flex flex-col items-center">
             <h5 class="text-cyan-600 text-xl mb-2.5">WHAT ARE WE DOING</h5>
             <h2 class="text-5xl font-bold mb-8 text-white">Results in Number</h2>
