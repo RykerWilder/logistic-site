@@ -22,7 +22,7 @@ export default {
             <div class="flex gap-14">
                 <p class="text-white w-[70%]">With all of this expertise and capability comes an unrivalled commitment to customer service. We will
                     work hard to understand your needs in order to develop a productive, long-term partnership.</p>
-                <button class="text-white border-1 transition border-cyan-600 rounded-full p-2 cursor-pointer hover:bg-cyan-600">SEE ALL</button>
+                <button class="text-white border-1 transition border-cyan-600 rounded-full p-3 px-4 cursor-pointer hover:bg-cyan-600">SEE ALL</button>
             </div>
         </div>
         <div class="flex p-8 gap-10">

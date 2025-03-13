@@ -11,10 +11,10 @@
                 with small, medium and large vehicles.</p>
             <div>
                 <button
-                    class="rounded-full transition border-1 border-cyan-600 text-white p-3 cursor-pointer bg-cyan-600 mr-1.5 hover:bg-transparent ">GET
+                    class="rounded-full transition border-1 border-cyan-600 text-white p-3 px-4 cursor-pointer bg-cyan-600 mr-1.5 hover:bg-transparent ">GET
                     IN TOUCH</button>
                 <button
-                    class="rounded-full transition text-white p-3 cursor-pointer border-1 border-cyan-600 hover:bg-cyan-600">READ
+                    class="rounded-full transition text-white p-3 px-4 cursor-pointer border-1 border-cyan-600 hover:bg-cyan-600">READ
                     MORE</button>
             </div>
         </div>
