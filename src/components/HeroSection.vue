@@ -34,7 +34,7 @@ export default {
             </svg>
             <div class="flex flex-col items-center gap-6">
                 <h3 class="text-4xl font-bold text-center text-white z-10">What are you looking for?</h3>
-                <input type="text" placeholder="Search Here" class="width-[80%] bg-slate-400 p-3 rounded-md focus:outline-0 z-10 text-white">
+                <input type="text" placeholder="Search Here" class="w-[80%] bg-slate-400 p-3 rounded-md focus:outline-0 z-10 text-white">
             </div>
         </div>
     </section>
