@@ -18,8 +18,6 @@ export default {
         SendAMessage
     }
 }
-
-
 </script>
 
 
