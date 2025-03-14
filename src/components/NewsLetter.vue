@@ -12,8 +12,8 @@
         </div>
         <div class="p-8 w-[50%]">
             <div class="flex flex-col gap-4 mb-3.5">
-                <input type="text" placeholder="Name" class="bg-slate-400 p-3 rounded-md w-full focus:outline-0">
-                <input type="email" placeholder="Email" class="bg-slate-400 p-3 rounded-md w-full focus:outline-0">
+                <input type="text" placeholder="Name" class="bg-slate-400 p-3 rounded-md w-full focus:outline-0 text-white">
+                <input type="email" placeholder="Email" class="bg-slate-400 p-3 rounded-md w-full focus:outline-0 text-white">
             </div>
             <button class="width-[30%] rounded-full transition border-1 border-cyan-600 text-white p-3 px-4 cursor-pointer bg-cyan-600 hover:bg-transparent hover:text-cyan-600">SUBSCRIBE</button>
         </div>
