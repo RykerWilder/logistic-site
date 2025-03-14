@@ -49,9 +49,9 @@ export default {
                 <li class="h-[100px]">
                     <img class="max-h-full" src="../assets/img/logo.svg" alt="logo">
                 </li>
-                <li class="hover:text-white"><router-link :to="{ name: 'home' }">Home</router-link></li>
-                <li class="hover:text-white"><router-link :to="{ name: 'about' }">About</router-link></li>
-                <li class="hover:text-white"><router-link :to="{ name: 'contact' }">Contact Us</router-link></li>
+                <li class="hover:text-white"><router-link :to="{ name: 'home' }" :class="{ 'text-white': $route.name === 'home' }">Home</router-link></li>
+                <li class="hover:text-white"><router-link :to="{ name: 'about' }" :class="{ 'text-white': $route.name === 'about' }">About</router-link></li>
+                <li class="hover:text-white"><router-link :to="{ name: 'contact' }" :class="{ 'text-white': $route.name === 'contact' }">Contact Us</router-link></li>
                 <li class="hover:text-white cursor-pointer" @click="store.searchBar = true">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                         stroke="currentColor" class="size-6">
