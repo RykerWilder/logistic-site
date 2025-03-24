@@ -1,13 +1,21 @@
 # NEX-GEN Transport
 
-Creating a Transportation and Logistics Site Template Using vue.js and Tailwind.
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white)
+![Tailwind](https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=flat&logo=tailwind-css&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black)
+![Vue.js](https://img.shields.io/badge/Vue.js-4FC08D?style=flat&logo=vue.js&logoColor=white)
+Creating a Transportation and Logistics Site Template Using vue.js and TailwindCSS.
+
+---
 
 ### Prerequisites 
 
 Before you begin, make sure you have the following installed: 
 - [Node.js](https://nodejs.org/) 
 - [npm](https://www.npmjs.com/) 
-- [Git](https://git-scm.com/) 
+- [Git](https://git-scm.com/)
+
+---
 
 ### How to Download and Start the Project 
 
